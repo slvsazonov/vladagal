@@ -1,0 +1,39 @@
+@keyframes typing {
+  0% { width: 0 }
+  100% { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+@keyframes fadeOut {
+  0%, 90% { opacity: 1 }
+  100% { opacity: 0 }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0 }
+  100% { opacity: 1 }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #4fd1ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 0;
+  animation: 
+    typing 2s steps(30, end) forwards,
+    blink .75s step-end infinite,
+    fadeOut 4s ease-out forwards,
+    fadeIn 0s 4s forwards,
+    typing 2s 4s steps(30, end) forwards;
+  animation-iteration-count: infinite;
+}
+
+.typewriter-container {
+  display: inline-block;
+  margin: 0 auto;
+}

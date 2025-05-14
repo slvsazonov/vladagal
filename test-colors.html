@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Test</title>
+    <style>
+        /* Color Variables */
+        :root {
+            --color-primary: #4fb2db;         /* Main brand (icy neon blue) */
+            --color-primary-dark: #1b6ba5;    /* Strong CTA / button color */
+            --color-accent: #2d8fc6;          /* Secondary link/buttons */
+            --color-accent-light: #b0d7e4;    /* Soft card / section backgrounds */
+            --color-text: #0d0f11;            /* Main text */
+            --color-bg-light: #ffffff;        /* White background */
+            --color-bg-alt: #b0d7e4;          /* Alt light blue sections */
+            --color-bg-dark: #0d0f11;         /* Footer / dark mode */
+            --color-on-primary: #ffffff;      /* Text on primary */
+            --color-on-dark: #b0d7e4;         /* Text on dark */
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--color-text);
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        h1 {
+            color: var(--color-text);
+        }
+        
+        .color-box {
+            display: flex;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+        
+        .color-sample {
+            width: 100px;
+            height: 100px;
+        }
+        
+        .color-info {
+            padding: 10px 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        
+        .primary {
+            background-color: var(--color-primary);
+        }
+        
+        .primary-dark {
+            background-color: var(--color-primary-dark);
+        }
+        
+        .accent {
+            background-color: var(--color-accent);
+        }
+        
+        .accent-light {
+            background-color: var(--color-accent-light);
+        }
+        
+        .text {
+            background-color: var(--color-text);
+        }
+        
+        .bg-light {
+            background-color: var(--color-bg-light);
+            border: 1px solid #eee;
+        }
+        
+        .bg-alt {
+            background-color: var(--color-bg-alt);
+        }
+        
+        .bg-dark {
+            background-color: var(--color-bg-dark);
+        }
+        
+        .gradient-hero {
+            background: linear-gradient(135deg, var(--color-accent-light), var(--color-bg-light));
+        }
+        
+        .gradient-cta {
+            background: linear-gradient(135deg, var(--color-primary-dark), var(--color-accent));
+        }
+        
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+        
+        .btn-primary {
+            background-color: var(--color-primary-dark);
+            color: var(--color-on-primary);
+        }
+        
+        .btn-secondary {
+            background-color: var(--color-on-primary);
+            color: var(--color-text);
+            border: 2px solid var(--color-primary-dark);
+        }
+        
+        .neon-text {
+            color: var(--color-primary);
+            text-shadow: 0 0 5px var(--color-primary), 0 0 10px var(--color-primary);
+        }
+    </style>
+</head>
+<body>
+    <h1>Color Palette Test</h1>
+    
+    <div class="color-box">
+        <div class="color-sample primary"></div>
+        <div class="color-info">
+            <h3>Primary Color</h3>
+            <p>#4fb2db - Main brand (icy neon blue)</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample primary-dark"></div>
+        <div class="color-info">
+            <h3>Primary Dark</h3>
+            <p>#1b6ba5 - Strong CTA / button color</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample accent"></div>
+        <div class="color-info">
+            <h3>Accent Color</h3>
+            <p>#2d8fc6 - Secondary link/buttons</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample accent-light"></div>
+        <div class="color-info">
+            <h3>Accent Light</h3>
+            <p>#b0d7e4 - Soft card / section backgrounds</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample text"></div>
+        <div class="color-info">
+            <h3>Text Color</h3>
+            <p>#0d0f11 - Main text</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample bg-light"></div>
+        <div class="color-info">
+            <h3>Background Light</h3>
+            <p>#ffffff - White background</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample bg-alt"></div>
+        <div class="color-info">
+            <h3>Background Alt</h3>
+            <p>#b0d7e4 - Alt light blue sections</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample bg-dark"></div>
+        <div class="color-info">
+            <h3>Background Dark</h3>
+            <p>#0d0f11 - Footer / dark mode</p>
+        </div>
+    </div>
+    
+    <h2>Gradients</h2>
+    
+    <div class="color-box">
+        <div class="color-sample gradient-hero"></div>
+        <div class="color-info">
+            <h3>Hero Gradient</h3>
+            <p>linear-gradient(135deg, #b0d7e4, #ffffff)</p>
+        </div>
+    </div>
+    
+    <div class="color-box">
+        <div class="color-sample gradient-cta"></div>
+        <div class="color-info">
+            <h3>CTA Gradient</h3>
+            <p>linear-gradient(135deg, #1b6ba5, #2d8fc6)</p>
+        </div>
+    </div>
+    
+    <h2>Buttons</h2>
+    
+    <a href="#" class="button btn-primary">Primary Button</a>
+    <a href="#" class="button btn-secondary">Secondary Button</a>
+    
+    <h2>Effects</h2>
+    
+    <p class="neon-text">This text has a neon glow effect</p>
+    
+    <p><a href="index.html">Back to main page</a></p>
+</body>
+</html>

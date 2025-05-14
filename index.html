@@ -1,0 +1,960 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REHANE CREW x VGAL - Personalized Program</title>
+    <meta name="description" content="A powerful fitness journey guided by Vlada & Mehdi. Transform your body with expert guidance from VGAL FIT and REHANE CREW.">
+    
+    <!-- Open Graph Tags for social sharing -->
+    <meta property="og:title" content="REHANE CREW x VGAL - Personalized Program">
+    <meta property="og:description" content="A powerful fitness journey guided by Vlada & Mehdi. Transform your body with expert guidance.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.vgalfit.com/rehane-crew">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="assets/images/favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/typewriter.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/enhanced-styles-v2.css?v=1.0.1">
+    <link rel="stylesheet" href="assets/css/dark-theme.css?v=1.0">
+    <link rel="stylesheet" href="assets/css/neon-dark-theme.css?v=1.0">
+    
+    <style>
+        /* Dark Theme Override */
+        body {
+            background-color: #0a0a0a !important;
+            color: #ffffff !important;
+        }
+        
+        h1, h2, h3, h4, h5, h6 {
+            color: #4fd1ff !important;
+        }
+        
+        h1.neon-text {
+            text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4) !important;
+        }
+        
+        .section-title {
+            color: #4fd1ff !important;
+            text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4) !important;
+        }
+        
+        .btn-primary {
+            background-color: #4fd1ff !important;
+            color: #0a0a0a !important;
+            border: 2px solid #4fd1ff !important;
+            box-shadow: 0 0 15px rgba(0, 224, 255, 0.5) !important;
+        }
+        
+        .btn-primary:hover {
+            background-color: transparent !important;
+            color: #4fd1ff !important;
+            box-shadow: 0 0 20px rgba(0, 224, 255, 0.8) !important;
+        }
+        
+        /* Navbar styles */
+        .navbar {
+            border-bottom: 1px solid rgba(31, 42, 53, 0.3);
+            position: relative;
+            background-color: #0a0a0a !important;
+        }
+        .navbar-menu ul li a {
+            color: #4fd1ff !important;
+            font-weight: 500;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            text-shadow: 0 0 5px rgba(0, 224, 255, 0.3);
+        }
+        .navbar-menu ul li a:hover {
+            color: #4fd1ff !important;
+            text-shadow: 0 0 10px rgba(0, 224, 255, 0.7);
+        }
+
+        .stat-bubble {
+            transition: all 0.3s ease-in-out;
+        }
+
+        .stat-bubble:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(79, 209, 255, 0.1);
+        }
+
+        .stat-bubble:hover i {
+            transform: scale(1.1);
+            text-shadow: 0 0 15px rgba(79, 209, 255, 0.5);
+        }
+
+        .stat-bubble i {
+            transition: all 0.3s ease-in-out;
+        }
+        .navbar-logo img {
+            filter: brightness(0) invert(1) drop-shadow(0 0 5px rgba(79, 209, 255, 0.8)) !important;
+        }
+        
+        /* Feature styles */
+        .feature-icon {
+            color: #4fd1ff !important;
+            transition: all 0.3s ease-in-out !important;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        .feature-item {
+            background: #101820;
+            border: 1px solid #1f2a35;
+            border-radius: 12px;
+            padding: 2rem;
+            transition: all 0.3s ease;
+        }
+        .feature-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 224, 255, 0.2);
+        }
+        .feature-item:hover .feature-icon {
+            color: #4fd1ff !important;
+            text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4) !important;
+        }
+        .feature-item h3 {
+            color: #4fd1ff !important;
+            margin-bottom: 1rem;
+        }
+        .feature-item p {
+            color: #b0c9d7 !important;
+        }
+
+        .pricing-features {
+            margin: 1.5rem 0;
+            padding: 0 1rem;
+        }
+
+        .pricing-feature-item {
+            color: #b0c9d7;
+            padding: 0.35rem 0;
+            font-size: 0.85rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+
+        .pricing-feature-item i {
+            color: #4fd1ff;
+            font-size: 1rem;
+        }
+        
+        /* Purchase section styles */
+        .purchase .btn-primary {
+            background-color: #4fd1ff !important;
+            color: #0a0a0a !important;
+            border: 2px solid #4fd1ff !important;
+            transition: all 0.3s ease-in-out !important;
+            box-shadow: 0 0 15px rgba(0, 224, 255, 0.5) !important;
+        }
+        .purchase .btn-primary:hover {
+            background-color: transparent !important;
+            color: #4fd1ff !important;
+            border: 2px solid #4fd1ff !important;
+            box-shadow: 0 0 20px rgba(0, 224, 255, 0.8) !important;
+            transform: translateY(-3px);
+        }
+        .purchase .btn-secondary {
+            background-color: transparent !important;
+            color: #4fd1ff !important;
+            border: 2px solid #4fd1ff !important;
+            transition: all 0.3s ease-in-out !important;
+        }
+        .purchase .btn-secondary:hover {
+            background-color: #4fd1ff !important;
+            color: #0a0a0a !important;
+            box-shadow: 0 0 20px rgba(0, 224, 255, 0.8) !important;
+            transform: translateY(-3px);
+        }
+        .pricing-card {
+            background: #0a0a0a;
+            border: 1px solid #1f2a35;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            max-width: 350px;
+            margin: 0;
+        }
+        .pricing-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 224, 255, 0.2);
+            border-color: #4fd1ff;
+        }
+        .pricing-card.featured-annual {
+            border: 2px solid #4fd1ff;
+            box-shadow: 0 0 20px rgba(0, 224, 255, 0.3);
+        }
+        
+        .pricing-card.featured-monthly {
+            border: 2px solid #2d8fc6;
+            box-shadow: 0 0 20px rgba(45, 143, 198, 0.3);
+        }
+        .pricing-header h3 {
+            color: #4fd1ff !important;
+        }
+        .price {
+            color: #ffffff !important;
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+        .price-saving {
+            background: #4fd1ff;
+            color: #0a0a0a !important;
+            font-weight: 600;
+            padding: 5px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-top: 10px;
+        }
+    </style>
+    
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Override CSS Variables -->
+    <style>
+        :root {
+            /* Colors */
+            --color-primary: #4fb2db !important;         /* Main brand (icy neon blue) */
+            --color-primary-dark: #1b6ba5 !important;    /* Strong CTA / button color */
+            --color-accent: #2d8fc6 !important;          /* Secondary link/buttons */
+            --color-accent-light: #b0d7e4 !important;    /* Soft card / section backgrounds */
+            --color-text: #0d0f11 !important;            /* Main text */
+            --color-bg-light: #ffffff !important;        /* White background */
+            --color-bg-alt: #b0d7e4 !important;          /* Alt light blue sections */
+            --color-bg-dark: #0d0f11 !important;         /* Footer / dark mode */
+            --color-on-primary: #ffffff !important;      /* Text on primary */
+            --color-on-dark: #b0d7e4 !important;         /* Text on dark */
+            
+            /* Override existing variables */
+            --primary-color: #4fb2db !important;
+            --secondary-color: #1b6ba5 !important;
+            --accent-color: #2d8fc6 !important;
+            --light-color: #ffffff !important;
+            --light-blue: #b0d7e4 !important;
+            --pale-blue: #4fb2db !important;
+            --dark-gray: #666666 !important;
+            --border-color: #e0e0e0 !important;
+        }
+        
+        /* Force specific color overrides */
+        .hero {
+            background: linear-gradient(135deg, #b0d7e4, #ffffff) !important;
+        }
+        
+        .purchase {
+            background: linear-gradient(135deg, #1b6ba5, #2d8fc6) !important;
+            color: #ffffff !important;
+        }
+        
+        .footer {
+            background-color: #0d0f11 !important;
+            color: #b0d7e4 !important;
+        }
+        
+        .btn-primary {
+            background-color: #1b6ba5 !important;
+            color: #ffffff !important;
+        }
+        
+        .btn-primary:hover {
+            background-color: #2d8fc6 !important;
+            box-shadow: 0 0 10px #4fb2db !important;
+        }
+        
+        .section-alt, .video-intro, .whats-included, .instagram-feed {
+            background-color: #b0d7e4 !important;
+        }
+        
+        .feature-icon {
+            color: #4fb2db !important;
+        }
+    </style>
+</head>
+<body style="background: #0a0a0a; color: #ffffff; font-family: 'Inter', 'Roboto', sans-serif; margin: 0; padding: 0; overflow-x: hidden;">
+    <style>
+        /* Global Styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        section {
+            background: #0a0a0a !important;
+            color: #ffffff !important;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        .section-title {
+            color: #4fd1ff !important;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: 800;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4);
+            margin-bottom: 2rem;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            transition: all 0.3s ease;
+        }
+        .btn-primary {
+            background: #4fd1ff;
+            color: #0a0a0a !important;
+            border: 2px solid #4fd1ff;
+            box-shadow: 0 0 15px rgba(0, 224, 255, 0.5);
+        }
+        .btn-primary:hover {
+            background: transparent;
+            color: #4fd1ff !important;
+            box-shadow: 0 0 20px rgba(0, 224, 255, 0.8);
+            transform: translateY(-3px);
+        }
+    </style>
+    <!-- Navigation -->
+    <nav class="navbar" style="background: #0a0a0a !important; position: relative; overflow: hidden; margin: 0; padding: 0; border-bottom: 1px solid rgba(31, 42, 53, 0.3);">
+        <div class="pattern-overlay pattern-dots"></div>
+
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <div class="navbar-content">
+
+                <div class="navbar-menu">
+                    <ul>
+                        <li><a href="#training-plans">PROGRAMS</a></li>
+                        <li><a href="#purchase">PRICES</a></li>
+                        <li><a href="#faq">FAQ</a></li>
+                        <li><a href="#contact">CONTACT</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero" style="position: relative; overflow: hidden; text-align: center; margin: 0; padding-top: 0;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url('assets/images/2025.04.30VLAD(209of223).jpg') center center/cover no-repeat; filter: brightness(0.5) contrast(1.2); z-index: 0;"></div>
+
+        <div class="pattern-overlay" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); z-index: 1;"></div>
+
+        <div class="pattern-overlay pattern-lines" style="opacity: 0.15; z-index: 2;"></div>
+
+        <div class="container" style="position: relative; z-index: 3;">
+            <div class="hero-content" style="padding: 6rem 0; color: #ffffff; position: relative; z-index: 3;">
+                <div class="logo-container" style="margin-bottom: 2rem;">
+                    <img src="assets/images/7e82f6da-074b-4833-8c77-d68ff6a54b1b-removebg-preview.png" alt="VGAL Logo" class="hero-logo" style="height: 60px; filter: drop-shadow(0 0 10px rgba(79, 209, 255, 0.5));">
+                    <span class="logo-separator" style="color: #4fd1ff; font-size: 2rem; margin: 0 1rem; vertical-align: middle;">×</span>
+                    <img src="assets/images/IMG_8306.PNG" alt="REHANE CREW Logo" class="hero-logo" style="height: 60px; filter: drop-shadow(0 0 10px rgba(79, 209, 255, 0.5));">
+                </div>
+
+                <div style="text-align: center;">
+                    <h1 class="neon-text typewriter" style="color: #4fd1ff !important; font-size: 3.5rem; margin-bottom: 1.5rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4);">REHANE CREW X VGAL</h1>
+                </div>
+                <h2 style="color: #b0c9d7; font-size: 1.5rem; margin-bottom: 2.5rem; font-weight: 400;">A powerful fitness journey guided by Vlada & Mehdi</h2>
+                <a href="#purchase" class="btn btn-primary glow-border" style="background-color: #4fd1ff; color: #0a0a0a; padding: 0.75rem 2rem; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; border-radius: 30px; border: 2px solid #4fd1ff; box-shadow: 0 0 15px rgba(0, 224, 255, 0.5); transition: all 0.3s ease;">START NOW</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Why Them Section -->
+    <section class="why-them" id="why-them" style="background: #0a0a0a !important; position: relative; overflow: hidden; text-align: center; margin: 0; padding: 4rem 0;">
+        <div class="pattern-overlay pattern-dots" style="opacity: 0.15;"></div>
+
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; align-items: start;">
+                <!-- Stats Column -->
+                <div>
+                    <!-- Stat Bubble 1 -->
+                    <div class="stat-bubble animate-on-scroll" style="background: linear-gradient(145deg, #1a2836, #101820); border-radius: 20px; padding: 2rem; margin-bottom: 1.5rem; border: 1px solid rgba(79, 209, 255, 0.1); backdrop-filter: blur(10px); position: relative; overflow: hidden; transform: translateX(0); transition: all 0.3s ease;">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; width: 100%; text-align: center;">
+                            <i class="fas fa-users" style="color: #4fd1ff; font-size: 1.4rem;"></i>
+                            <div>
+                                <div style="font-size: 1.5rem; font-weight: 700; color: #fff; letter-spacing: -0.5px;">3M+</div>
+                                <div style="color: #b0c9d7; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.8px; line-height: 1.2;">Total community</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stat Bubble 2 -->
+                    <div class="stat-bubble animate-on-scroll" style="background: linear-gradient(145deg, #1a2836, #101820); border-radius: 20px; padding: 2rem; margin-bottom: 1.5rem; border: 1px solid rgba(79, 209, 255, 0.1); backdrop-filter: blur(10px); position: relative; overflow: hidden; transform: translateX(0); transition: all 0.3s ease;">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; width: 100%; text-align: center;">
+                            <i class="fas fa-dumbbell" style="color: #4fd1ff; font-size: 2rem;"></i>
+                            <div>
+                                <div style="font-size: 1.5rem; font-weight: 700; color: #fff; letter-spacing: -0.5px;">150K+</div>
+                                <div style="color: #b0c9d7; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.8px; line-height: 1.2;">Workouts Completed</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Stat Bubble 3 -->
+                    <div class="stat-bubble animate-on-scroll" style="background: linear-gradient(145deg, #1a2836, #101820); border-radius: 20px; padding: 2rem; margin-bottom: 1.5rem; border: 1px solid rgba(79, 209, 255, 0.1); backdrop-filter: blur(10px); position: relative; overflow: hidden; transform: translateX(0); transition: all 0.3s ease;">
+                        <div style="display: flex; flex-direction: column; align-items: center; gap: 0.8rem; width: 100%; text-align: center;">
+                            <i class="fas fa-fire" style="color: #4fd1ff; font-size: 2rem;"></i>
+                            <div>
+                                <div style="font-size: 1.5rem; font-weight: 700; color: #fff; letter-spacing: -0.5px;">10K+</div>
+                                <div style="color: #b0c9d7; font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.8px; line-height: 1.2;">Transformations completed</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Content Column -->
+                <div>
+                    <h2 class="section-title neon-text animate-on-scroll" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4);"><span style="color: #ffffff;">Your</span> Trainers</h2>
+                    <p style="color: #b0c9d7 !important; margin-bottom: 1.5rem; font-size: 1.1rem; line-height: 1.6;">"We're Vlada and Mehdi, and together we've created something special. Combining Vlada's expertise in functional training from VGAL FIT and Mehdi's strength-focused approach from REHANE CREW, we deliver a complete fitness transformation that's already changed thousands of lives."</p>
+                    <p style="color: #b0c9d7 !important; font-size: 1.1rem; line-height: 1.6;">Join our community and experience the power of our combined methodology - where proper form meets functional strength, and sustainable progress leads to incredible transformations.</p>
+                </div>
+            </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Video Intro Section -->
+    <section class="video-intro dark" id="video-intro" style="background: #0a0a0a !important; color: #ffffff !important; position: relative; overflow: hidden; margin: 0; padding: 4rem 0;">
+        <div class="pattern-overlay pattern-grid"></div>
+
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title neon-text"><span style="color: #ffffff;">Meet</span> Your Coaches</h2>
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/cgF4BV5s6KY" title="Vlada & Mehdi Introduction" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- What's Included Section -->
+    <section class="whats-included dark" id="whats-included" style="background: #0a0a0a !important; color: #ffffff !important; position: relative; overflow: hidden; margin: 0; padding: 4rem 0;">
+        <div class="pattern-overlay pattern-squares"></div>
+
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title neon-text"><span style="color: #ffffff;">What's</span> Included</h2>
+            <div class="features-grid">
+                <div class="feature-item" style="background: #0a0a0a; border: 2px solid #2d8fc6; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+                    <div class="feature-icon" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 1rem;">
+                        <i class="fas fa-dumbbell"></i>
+                    </div>
+
+                    <h3 style="color: #4fd1ff !important;">Full Training Access</h3>
+                    <p style="color: #b0c9d7 !important;">Complete access to all workout programs with video demonstrations and detailed instructions.</p>
+                </div>
+
+                <div class="feature-item" style="background: #0a0a0a; border: 2px solid #2d8fc6; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+                    <div class="feature-icon" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 1rem;">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+
+                    <h3 style="color: #4fd1ff !important;">Personalized Schedule</h3>
+                    <p style="color: #b0c9d7 !important;">Custom workout schedules tailored to your goals, fitness level, and availability.</p>
+                </div>
+
+                <div class="feature-item" style="background: #0a0a0a; border: 2px solid #2d8fc6; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+                    <div class="feature-icon" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 1rem;">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+
+                    <h3 style="color: #4fd1ff !important;">Nutritional Guidance</h3>
+                    <p style="color: #b0c9d7 !important;">Comprehensive meal plans, grocery lists, and nutritional advice to fuel your progress.</p>
+                </div>
+
+                <div class="feature-item" style="background: #0a0a0a; border: 2px solid #2d8fc6; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+                    <div class="feature-icon" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 1rem;">
+                        <i class="fas fa-users"></i>
+                    </div>
+
+                    <h3 style="color: #4fd1ff !important;">Community Support</h3>
+                    <p style="color: #b0c9d7 !important;">Access to an exclusive community of like-minded individuals on the same fitness journey.</p>
+                </div>
+
+                <div class="feature-item" style="background: #0a0a0a; border: 2px solid #2d8fc6; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+                    <div class="feature-icon" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 1rem;">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+
+                    <h3 style="color: #4fd1ff !important;">Mobile App Access</h3>
+                    <p style="color: #b0c9d7 !important;">Track your progress and access your workouts anytime, anywhere with our dedicated mobile app.</p>
+                </div>
+
+
+
+                <div class="feature-item" style="background: #0a0a0a; border: 2px solid #2d8fc6; border-radius: 12px; padding: 2rem; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);">
+                    <div class="feature-icon" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 1rem;">
+                        <i class="fas fa-comments"></i>
+                    </div>
+
+                    <h3 style="color: #4fd1ff !important;">Weekly Check-ins</h3>
+                    <p style="color: #b0c9d7 !important;">Regular check-ins to monitor your progress and adjust your program as needed.</p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Testimonials Section - Photo Gallery -->
+    <section class="testimonials" id="testimonials" style="background: #0a0a0a !important; color: #ffffff !important; position: relative; overflow: hidden; margin: 0; padding: 4rem 0;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title neon-text animate-on-scroll" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 3rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4);">Real people, <span style="color: #ffffff;">achieving real results</span></h2>
+            
+            <!-- Photo Gallery Container -->
+            <div class="photo-gallery" style="position: relative; height: 500px; margin-bottom: 2rem;">
+                <!-- Photo 1 -->
+                <div class="gallery-item" style="position: absolute; width: 250px; height: 350px; overflow: hidden; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.8s ease; animation: float1 15s infinite ease-in-out;">
+                    <img src="assets/images/photo-output 2.jpeg" alt="Transformation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <!-- Photo 2 -->
+                <div class="gallery-item" style="position: absolute; left: 200px; top: 50px; width: 280px; height: 380px; overflow: hidden; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.8s ease; animation: float2 18s infinite ease-in-out;">
+                    <img src="assets/images/photo-output (3).jpeg" alt="Transformation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <!-- Photo 3 -->
+                <div class="gallery-item" style="position: absolute; left: 450px; top: 20px; width: 230px; height: 320px; overflow: hidden; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.8s ease; animation: float3 20s infinite ease-in-out;">
+                    <img src="assets/images/photo-output (2).jpeg" alt="Transformation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <!-- Photo 4 -->
+                <div class="gallery-item" style="position: absolute; left: 650px; top: 80px; width: 260px; height: 340px; overflow: hidden; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.8s ease; animation: float4 17s infinite ease-in-out;">
+                    <img src="assets/images/photo-output (1).jpeg" alt="Transformation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <!-- Photo 5 -->
+                <div class="gallery-item" style="position: absolute; left: 100px; top: 150px; width: 240px; height: 330px; overflow: hidden; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.8s ease; animation: float5 19s infinite ease-in-out;">
+                    <img src="assets/images/167E6618-3DE9-491D-8B30-440BFAA812BD 2.jpeg" alt="Transformation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <!-- Photo 6 -->
+                <div class="gallery-item" style="position: absolute; left: 350px; top: 120px; width: 270px; height: 360px; overflow: hidden; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.8s ease; animation: float6 16s infinite ease-in-out;">
+                    <img src="assets/images/539FFC3E-4556-4780-B3FC-620D3DF29F0D 2.jpeg" alt="Transformation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+                
+                <!-- Photo 7 -->
+                <div class="gallery-item" style="position: absolute; left: 580px; top: 150px; width: 250px; height: 340px; overflow: hidden; border-radius: 8px; box-shadow: 0 10px 20px rgba(0,0,0,0.2); transition: all 0.8s ease; animation: float7 21s infinite ease-in-out;">
+                    <img src="assets/images/942E4C5F-5F69-402C-88F3-AB9BD7C58451 2.jpeg" alt="Transformation" style="width: 100%; height: 100%; object-fit: cover;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- How to Get Started Section -->
+    <section id="get-started" style="background: #0a0a0a !important; color: #ffffff !important; position: relative; overflow: hidden; margin: 0; padding: 4rem 0;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title neon-text animate-on-scroll" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 2rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4);"><span style="color: #ffffff;">How to</span> Get Started</h2>
+            
+            <div class="steps-container" style="display: flex; justify-content: center; gap: 2rem; margin: 2rem 0; position: relative;">
+                <!-- Step 1 -->
+                <div class="step-item animate-on-scroll animate animated" style="background: #101820; border: 1px solid #1f2a35; border-radius: 20px; padding: 2rem; flex: 1; min-width: 280px; max-width: 350px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); position: relative;">
+                    <div class="step-icon" style="color: #4fd1ff; font-size: 3rem; margin-bottom: 1.5rem; text-align: center;">
+                        <i class="fas fa-clipboard-list"></i>
+                    </div>
+                    <h3 style="color: #fff !important; text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">Select Your Plan</h3>
+                    <p style="color: #b0c9d7 !important; text-align: center; line-height: 1.6; font-size: 1rem;">Choose the plan that best fits your goals and fitness level.</p>
+                </div>
+
+                <!-- Arrow 1 -->
+                <div style="display: flex; align-items: center; color: #4fd1ff; font-size: 2rem; margin: 0 -1rem; align-self: center;" class="arrow-right d-none d-lg-block">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="step-item animate-on-scroll animate animated" style="background: #101820; border: 1px solid #1f2a35; border-radius: 20px; padding: 2rem; flex: 1; min-width: 280px; max-width: 350px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); position: relative;">
+                    <div class="step-icon" style="color: #4fd1ff; font-size: 3rem; margin-bottom: 1.5rem; text-align: center;">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3 style="color: #fff !important; text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">Pay Securely</h3>
+                    <p style="color: #b0c9d7 !important; text-align: center; line-height: 1.6; font-size: 1rem;">Complete your purchase securely through our Stripe payment system.</p>
+                </div>
+
+                <!-- Arrow 2 -->
+                <div style="display: flex; align-items: center; color: #4fd1ff; font-size: 2rem; margin: 0 -1rem; align-self: center;" class="arrow-right d-none d-lg-block">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="step-item animate-on-scroll animate animated" style="background: #101820; border: 1px solid #1f2a35; border-radius: 20px; padding: 2rem; flex: 1; min-width: 280px; max-width: 350px; transition: all 0.3s ease; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);">
+                    <div class="step-icon" style="color: #4fd1ff; font-size: 3rem; margin-bottom: 1.5rem; text-align: center;">
+                        <i class="fas fa-unlock-alt"></i>
+                    </div>
+                    <h3 style="color: #fff !important; text-align: center; margin-bottom: 1rem; font-size: 1.5rem;">Get Immediate Access</h3>
+                    <p style="color: #b0c9d7 !important; text-align: center; line-height: 1.6; font-size: 1rem;">Gain instant access to your program and start your transformation today.</p>
+                </div>
+            </div>
+
+                
+            <div class="pricing-container" style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; margin-top: 2rem; padding: 0 1rem;">
+                <!-- Monthly Plan -->
+                <div class="pricing-card" style="background: linear-gradient(145deg, #101820, #1a2836); border-radius: 20px; padding: 2rem; width: 350px; position: relative; backdrop-filter: blur(10px); border: 1px solid rgba(45, 143, 198, 0.3); transform-style: preserve-3d; transition: all 0.3s ease;">
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3 style="color: #4fd1ff; font-size: 1.8rem; margin-bottom: 1rem;">Monthly Membership</h3>
+                        <div style="font-size: 3.5rem; font-weight: 700; color: #fff; text-shadow: 0 0 20px rgba(79, 209, 255, 0.5); margin-bottom: 0.5rem;">$9.00</div>
+                        <p style="color: #b0c9d7; font-size: 0.9rem;">*USD. Billed Monthly</p>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Personalized Fitness Plan</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Personalized Meal Plan</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Step By Step Video Demos</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Grocery Guides</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Workout History</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Community Access</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Online Support</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Monthly Check-ins</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary open-payment" data-plan="Monthly Membership" data-price="$9.00" style="width: 100%; padding: 1rem; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #4fd1ff, #2d8fc6); border: none; border-radius: 12px; color: #fff; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(79, 209, 255, 0.3);">Let's Go</button>
+                </div>
+
+                <div class="pricing-card featured" style="background: linear-gradient(145deg, #101820, #1a2836); border-radius: 20px; padding: 2rem; width: 350px; position: relative; backdrop-filter: blur(10px); border: 1px solid rgba(45, 143, 198, 0.3); transform-style: preserve-3d; transition: all 0.3s ease;">
+                    
+                    <div style="text-align: center; margin-bottom: 2rem;">
+                        <h3 style="color: #4fd1ff; font-size: 1.8rem; margin-bottom: 1rem;">Annual Membership</h3>
+                        <div style="font-size: 3.5rem; font-weight: 700; color: #fff; text-shadow: 0 0 20px rgba(79, 209, 255, 0.5); margin-bottom: 0.5rem;">$90.00</div>
+                        <p style="color: #b0c9d7; font-size: 0.9rem;">*USD. Billed Annually</p>
+                        <div style="background: linear-gradient(135deg, #ff6b6b, #ffd93d); padding: 0.5rem; border-radius: 8px; color: #fff; font-weight: 600; margin-top: 1rem;">SAVE 17% ($18)</div>
+                    </div>
+
+                    <div style="margin-bottom: 2rem;">
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-check-circle" style="color: #4fd1ff; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Everything in Monthly Plan</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-plus-circle" style="color: #ffd93d; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Priority Support</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-plus-circle" style="color: #ffd93d; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Exclusive Content</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-plus-circle" style="color: #ffd93d; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Advanced Analytics</span>
+                        </div>
+                        <div class="feature-row" style="display: flex; align-items: center; margin-bottom: 1rem; color: #fff;">
+                            <i class="fas fa-plus-circle" style="color: #ffd93d; margin-right: 1rem; font-size: 1.2rem;"></i>
+                            <span>Bi-Weekly Check-ins</span>
+                        </div>
+                    </div>
+
+                    <button class="btn btn-primary open-payment" data-plan="Annual Membership" data-price="$90.00" style="width: 100%; padding: 1rem; font-size: 1.1rem; font-weight: 600; background: linear-gradient(135deg, #ff6b6b, #ffd93d); border: none; border-radius: 12px; color: #fff; cursor: pointer; transition: all 0.3s ease; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);">Best Value - Save 17%</button>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq" id="faq" style="background: #0a0a0a !important; color: #ffffff !important; position: relative; overflow: hidden; margin: 0; padding: 4rem 0;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title neon-text" style="color: #4fd1ff !important; font-size: 2.5rem; margin-bottom: 3rem; text-align: center; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4);"><span style="color: #ffffff;">Frequently Asked</span> Questions</h2>
+            
+            <!-- Accordion FAQ layout -->
+            <div class="faq-accordion" style="max-width: 800px; margin: 0 auto;">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item" style="margin-bottom: 0.75rem; border-bottom: 1px solid rgba(79, 209, 255, 0.1);">
+                    <div class="faq-question" style="padding: 1rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0; font-weight: 600;">What if I'm a beginner?</h3>
+                        <i class="fas fa-plus" style="color: #4fd1ff; transition: transform 0.3s ease;"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p style="color: #b0c9d7; line-height: 1.6; margin: 0; padding: 0 0 1rem 0; font-size: 0.95rem;">The workout is entirely tailored to you and your goals. If you are new to fitness, we've got your back with a personalized program designed specifically for beginners. You'll start with appropriate weights and exercises for your fitness level.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item" style="margin-bottom: 0.75rem; border-bottom: 1px solid rgba(79, 209, 255, 0.1);">
+                    <div class="faq-question" style="padding: 1rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0; font-weight: 600;">How long until I see results?</h3>
+                        <i class="fas fa-plus" style="color: #4fd1ff; transition: transform 0.3s ease;"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p style="color: #b0c9d7; line-height: 1.6; margin: 0; padding: 0 0 1rem 0; font-size: 0.95rem;">Most clients start seeing visible changes within 4-6 weeks of consistent training. However, you'll feel stronger and more energetic within the first two weeks. Remember, consistency is key to achieving lasting results.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item" style="margin-bottom: 0.75rem; border-bottom: 1px solid rgba(79, 209, 255, 0.1);">
+                    <div class="faq-question" style="padding: 1rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0; font-weight: 600;">Do I need special equipment?</h3>
+                        <i class="fas fa-plus" style="color: #4fd1ff; transition: transform 0.3s ease;"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p style="color: #b0c9d7; line-height: 1.6; margin: 0; padding: 0 0 1rem 0; font-size: 0.95rem;">Our home workout program requires minimal equipment (resistance bands, a few dumbbells). For gym programs, any standard gym equipment will be sufficient. We provide alternatives for each exercise based on what you have available.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item" style="margin-bottom: 0.75rem; border-bottom: 1px solid rgba(79, 209, 255, 0.1);">
+                    <div class="faq-question" style="padding: 1rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0; font-weight: 600;">How is this different from other programs?</h3>
+                        <i class="fas fa-plus" style="color: #4fd1ff; transition: transform 0.3s ease;"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p style="color: #b0c9d7; line-height: 1.6; margin: 0; padding: 0 0 1rem 0; font-size: 0.95rem;">Our program combines Vlada's functional training expertise with Mehdi's strength-focused approach, creating a unique methodology that emphasizes proper form, progressive overload, and sustainable results. We focus on long-term success, not quick fixes.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item" style="margin-bottom: 0.75rem; border-bottom: 1px solid rgba(79, 209, 255, 0.1);">
+                    <div class="faq-question" style="padding: 1rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0; font-weight: 600;">Is nutrition guidance included?</h3>
+                        <i class="fas fa-plus" style="color: #4fd1ff; transition: transform 0.3s ease;"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p style="color: #b0c9d7; line-height: 1.6; margin: 0; padding: 0 0 1rem 0; font-size: 0.95rem;">Yes, all our programs include basic nutrition guidelines. Our premium packages include personalized meal plans tailored to your specific goals, dietary preferences, and lifestyle needs.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item" style="margin-bottom: 0.75rem; border-bottom: 1px solid rgba(79, 209, 255, 0.1);">
+                    <div class="faq-question" style="padding: 1rem 0; cursor: pointer; display: flex; justify-content: space-between; align-items: center;" onclick="toggleFaq(this)">
+                        <h3 style="color: #ffffff; font-size: 1.2rem; margin: 0; font-weight: 600;">How do I access the workout content?</h3>
+                        <i class="fas fa-plus" style="color: #4fd1ff; transition: transform 0.3s ease;"></i>
+                    </div>
+                    <div class="faq-answer" style="max-height: 0; overflow: hidden; transition: max-height 0.3s ease;">
+                        <p style="color: #b0c9d7; line-height: 1.6; margin: 0; padding: 0 0 1rem 0; font-size: 0.95rem;">After purchase, you'll receive immediate access to our private member portal where all your workout videos, PDFs, and resources are stored. You can access this content on any device, anytime, anywhere.</p>
+                    </div>
+                </div>
+            </div>
+
+            
+            <div style="text-align: center; margin-top: 3rem;">
+                <a href="#contact" class="btn btn-primary" style="background: #2d8fc6; color: #ffffff; border: none; padding: 0.75rem 1.5rem; border-radius: 30px; text-decoration: none; font-weight: 600; letter-spacing: 1px; box-shadow: 0 0 15px rgba(45, 143, 198, 0.5); transition: all 0.3s ease;">Still Have Questions? Contact Us</a>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Instagram Feed Section -->
+    <section id="instagram-feed" class="section-alt" style="background: #0a0a0a !important; padding: 5rem 0;">
+        <div class="container" style="max-width: 800px; margin: 0 auto;">
+            <h2 class="section-title text-center neon-text" style="margin-bottom: 3rem;"><span style="color: #ffffff;">Follow Us</span> in Action</h2>
+            
+            <!-- Single Line Instagram Grid -->
+            <div style="margin-bottom: 3rem;">
+                <!-- Instagram Handle -->
+                <div style="text-align: center; margin-bottom: 2rem;">
+                    <a href="https://www.instagram.com/" target="_blank" style="color: #4fd1ff; text-decoration: none; font-size: 1.2rem; display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fab fa-instagram"></i> @rehane_crew × @vgal_fit
+                    </a>
+                </div>
+                
+                <!-- Instagram Posts Row -->
+                <div style="display: flex; justify-content: space-between; gap: 1rem; overflow-x: auto; padding-bottom: 1rem;">
+                    <!-- Post 1 -->
+                    <div style="flex: 0 0 32%; min-width: 250px;">
+                        <div style="padding-bottom: 100%; position: relative;">
+                            <iframe src="https://www.instagram.com/p/DJWf5OfgWbO/embed/?cr=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 2 -->
+                    <div style="flex: 0 0 32%; min-width: 250px;">
+                        <div style="padding-bottom: 100%; position: relative;">
+                            <iframe src="https://www.instagram.com/p/DJFIdFWyv95/embed/?cr=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                    
+                    <!-- Post 3 (Vlada) -->
+                    <div style="flex: 0 0 32%; min-width: 250px;">
+                        <div style="padding-bottom: 100%; position: relative;">
+                            <iframe src="https://www.instagram.com/p/DJReqVRAHdc/embed/?cr=1" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" frameborder="0" scrolling="no" allowtransparency="true"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section -->
+    <section class="contact" id="contact" style="background: #0a0a0a !important; color: #ffffff !important; position: relative; overflow: hidden; margin: 0; padding: 4rem 0;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <h2 class="section-title text-center neon-text" style="color: #4fd1ff !important; margin-bottom: 3rem; text-transform: uppercase; letter-spacing: 2px; font-weight: 700; text-shadow: 0 0 10px rgba(0, 224, 255, 0.7), 0 0 20px rgba(0, 224, 255, 0.4);"><span style="color: #ffffff;">Have</span> Questions?</h2>
+            <div class="contact-container" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <div style="background: #101820; border-radius: 12px; padding: 2rem; box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); border: 1px solid #4fd1ff;">
+                    <p style="color: #b0c9d7; font-size: 1.2rem; margin-bottom: 2rem;">Feel free to reach out with any questions! We'll get back to you as soon as possible.</p>
+                    <a href="mailto:test@vlada.com" class="btn btn-primary" style="display: inline-block; background-color: #4fd1ff; color: #0a0a0a; padding: 0.75rem 2rem; font-size: 1rem; font-weight: 600; text-transform: uppercase; letter-spacing: 1px; border-radius: 30px; border: none; box-shadow: 0 0 15px rgba(0, 224, 255, 0.5); transition: all 0.3s ease; cursor: pointer; text-decoration: none;">
+                        <i class="fas fa-envelope" style="margin-right: 0.5rem;"></i>Send Email
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer" style="background: #0a0a0a !important; color: #ffffff !important; border-top: 1px solid rgba(79, 209, 255, 0.2); padding: 4rem 0 2rem; margin: 0;">
+        <div class="container" style="max-width: 1000px; margin: 0 auto;">
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 3rem; align-items: start;">
+                <!-- Brand Column -->
+                <div style="text-align: left;">
+                    <h3 style="color: #ffffff; font-size: 1.5rem; margin-bottom: 1rem; font-weight: 600;"><span style="color: #4fd1ff;">REHANE</span> × <span style="color: #4fd1ff;">VGAL</span></h3>
+                    <p style="color: #b0c9d7; line-height: 1.6; margin-bottom: 1.5rem; font-size: 0.95rem;">Transform your body with expert guidance from our combined methodology.</p>
+                    <div class="footer-social" style="display: flex; gap: 1rem;">
+                        <a href="https://www.instagram.com/mehdirehane/" target="_blank" style="color: #4fd1ff; font-size: 1.2rem; transition: all 0.3s ease;"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@vladigalagana" target="_blank" style="color: #4fd1ff; font-size: 1.2rem; transition: all 0.3s ease;"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Links Column -->
+                <div>
+                    <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 1.2rem; font-weight: 500;">Quick Links</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <a href="#hero" style="color: #b0c9d7; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem;">Home</a>
+                        <a href="#video-intro" style="color: #b0c9d7; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem;">About</a>
+                        <a href="#whats-included" style="color: #b0c9d7; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem;">Features</a>
+                        <a href="#get-started" style="color: #b0c9d7; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem;">Purchase</a>
+                    </div>
+                </div>
+                
+                <!-- Contact Column -->
+                <div>
+                    <h4 style="color: #ffffff; font-size: 1.1rem; margin-bottom: 1.2rem; font-weight: 500;">Contact</h4>
+                    <div style="display: flex; flex-direction: column; gap: 0.8rem;">
+                        <a href="mailto:info@rehanecrew-vgal.com" style="color: #b0c9d7; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-envelope" style="color: #4fd1ff; font-size: 0.9rem;"></i> info@rehanecrew-vgal.com
+                        </a>
+                        <a href="#contact" style="color: #b0c9d7; text-decoration: none; transition: all 0.3s ease; font-size: 0.95rem; display: flex; align-items: center; gap: 0.5rem;">
+                            <i class="fas fa-comment" style="color: #4fd1ff; font-size: 0.9rem;"></i> Send us a message
+                        </a>
+                    </div>
+                </div>
+            </div>
+            
+            <div style="margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgba(79, 209, 255, 0.1); text-align: center;">
+                <div style="margin-bottom: 1rem;">
+                    <a href="pages/privacy-policy.html" style="color: #b0c9d7; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; transition: color 0.3s ease;">Privacy Policy</a>
+                    <a href="pages/legal-disclaimer.html" style="color: #b0c9d7; text-decoration: none; margin: 0 1rem; font-size: 0.9rem; transition: color 0.3s ease;">Legal Disclaimer</a>
+                </div>
+                <p style="color: #b0c9d7; font-size: 0.9rem;">&copy; 2025 REHANE CREW × VGAL. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Sticky CTA Button -->
+    <div class="sticky-cta">
+        <a href="#purchase" class="btn btn-primary">Join Now</a>
+    </div>
+
+
+    <!-- Payment Modal -->
+    <div class="payment-modal" id="paymentModal">
+        <div class="payment-modal-content">
+            <span class="payment-modal-close">&times;</span>
+            <h3>Complete Your Purchase</h3>
+            <div class="payment-details">
+                <div class="payment-plan-info">
+                    <h4>Selected Plan: <span id="selectedPlanName"></span></h4>
+                    <p style="color: #ffffff !important;">Price: <span id="selectedPlanPrice"></span></p>
+                </div>
+
+                <form id="payment-form">
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="color: #b0c9d7; display: block; margin-bottom: 0.5rem; font-weight: 500;" for="name">Full Name</label>
+                        <input style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #4fd1ff; background: #0a0a0a; color: #ffffff;" type="text" id="customer-name" name="name" required>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="color: #b0c9d7; display: block; margin-bottom: 0.5rem; font-weight: 500;" for="email">Email Address</label>
+                        <input style="width: 100%; padding: 0.75rem; border-radius: 6px; border: 1px solid #4fd1ff; background: #0a0a0a; color: #ffffff;" type="email" id="customer-email" name="email" required>
+                    </div>
+
+                    <div class="form-group" style="margin-bottom: 1.5rem;">
+                        <label style="color: #b0c9d7; display: block; margin-bottom: 0.5rem; font-weight: 500;" for="card-element">Credit or Debit Card</label>
+                        <div id="card-element">
+                            <!-- Stripe Element will be inserted here -->
+                        </div>
+
+                        <div id="card-errors" role="alert"></div>
+
+                    </div>
+
+                    <button type="submit" id="submit-button" class="btn btn-primary btn-block">
+                        <span id="button-text">Pay Now</span>
+                        <div class="spinner hidden" id="spinner"></div>
+
+                    </button>
+                </form>
+            </div>
+
+            <div id="payment-message" class="hidden"></div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Instagram Embed Script -->
+    <script async src="https://www.instagram.com/embed.js"></script>
+
+    <!-- Custom JavaScript -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="assets/js/animations.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/stripe-integration.js"></script>
+</body>
+</html>
