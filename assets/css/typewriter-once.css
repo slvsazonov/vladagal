@@ -1,0 +1,26 @@
+@keyframes typing {
+  0% { width: 0 }
+  100% { width: 100% }
+}
+
+@keyframes blink {
+  50% { border-color: transparent }
+}
+
+.typewriter {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid #4fd1ff;
+  white-space: nowrap;
+  margin: 0 auto;
+  width: 0;
+  animation: 
+    typing 3s steps(30, end) forwards,
+    blink .75s step-end infinite;
+  animation-iteration-count: 1, infinite;
+}
+
+.typewriter-container {
+  display: inline-block;
+  margin: 0 auto;
+}
